@@ -43,6 +43,7 @@ void map_pages(Logical_memory *memory, Address address, int size) {
       ram_manager[i] = false;
       memory->mapping_table[page_to_map] = i;
       if (page_to_map == last_page) return;
+      page_to_map ++;
     }
   }
 }
